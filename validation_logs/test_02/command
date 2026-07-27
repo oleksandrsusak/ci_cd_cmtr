@@ -1,0 +1,10 @@
+sed -i '/Item={/,/}/ { /"verification":/d }; /Item={/a\    "verification": "'"${VERIFICATION_TAG}"'",' "${handler_file}"
+grep -q "\"verification\": \"${VERIFICATION_TAG}\"" "${handler_file}"
+git config --global user.name "${custom_identifier}"
+git config --global user.email "${custom_identifier}@cloud-mentor.local"
+git add .
+sed -i '/Item={/,/}/ { /"verification":/d }; /Item={/a\    "verification": "'"${VERIFICATION_TAG}"'",' "${handler_file}"
+grep -q "\"verification\": \"${VERIFICATION_TAG}\"" "${handler_file}"
+git config --global user.name "${custom_identifier}"
+git config --global user.email "${custom_identifier}@cloud-mentor.local"
+git add .
