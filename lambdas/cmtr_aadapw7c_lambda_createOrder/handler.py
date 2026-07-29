@@ -14,7 +14,7 @@ def lambda_handler(event, context):
 
     table.put_item(
         Item={
-    "verification": "20260729103409",
+    "verification": "20260729104732",
             "orderId": order_id,
             "userId": "mock-user",
             "productId": "mock-product",
